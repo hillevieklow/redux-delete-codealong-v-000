@@ -6,7 +6,7 @@ export default function manageTodo(state = {
     case 'ADD_TODO':
 
       const todo = {
-        id: Math.random()*10000000000000000,
+        id: Math.random()*100000000000000,
         text: action.payload.text
       }
       return { todos: state.todos.concat(todo) };
